@@ -1,0 +1,36 @@
+.nav_bar{
+    width: 100%;
+    background-color:rgb(255, 240, 241) ;
+    border-color: black;
+    border-width: 20px;
+}
+.nav_bar li {
+    display: inline;
+    padding-left: 4%;
+}
+
+.nav_bar h1{
+    display: inline;
+}
+.search_bar form{
+    display: inline;
+    padding: 2%;
+}
+.search_bar input{
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+}
+.search_bar button{
+    width: 20px;
+    height :20px ;
+}
+.login a{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.login{
+    border: 20px black; 
+    display: inline-block;
+    height :50px ;
+}
