@@ -1,89 +1,155 @@
+
+*{
+    margin: 0;
+    padding :0 ;
+    box-sizing: border-box;
+}
+
 .nav_bar{
     width: 100%;
     display: flex ;
-    justify-content: space-around;
+    height: 90px;
+    justify-content: left;
     align-items: center;
+    align-content: center;
     background-color:rgb(250, 248, 248) ;
-    border-color: black;
-    border-width: 20px;
 }
-.nav_bar * {
-    
+ .nav_bar .big-screen{
+    display: none;
+
+}
+.Mod{
+    display: none;
+
+}
+.Mod2{
+    margin-left: auto;
+   list-style-type: none;
+}
+.icon1{
+    display: i;
+    list-style-type: none;
+}
+.icon1 span{
     display: inline;
 }
 
-.material-symbols-outlined {
-    display: flex;
-    justify-content: center;
-    align-content:center ;
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-.form1
-{
-    display: flex;
-    justify-content: center;
-    align-content:center ;
-}
-.search_bar{
-    display: flex;
-    justify-content: center;
-    align-content:center ;
+@media screen and (min-width:480px) {
+    .nav_bar .big-screen{
+        display: inline-block;
     
-
+    }
+    .nav_bar{
+        width: 100%;
+        display: flex ;
+        height: 90px;
+        justify-content: left;
+        align-items: center;
+        align-content: center;
+        background-color:rgb(250, 248, 248) ;
+    }
+    .icon1{
+        display: none;
+       }
+   .nav_bar > li  {    
+    list-style-type: none;
+        margin: 7px ;
+     }
+     
+ .SmallscreenTag h1
+{
+  visibility: visible;
+  display: inline;
+  position: relative;
+  top: -2px;
 } 
-.search_bar section
-{
-    border : solid 1px black;
-    border-radius: 50px;
-    padding: 10px;
-    background-color: white;
-}
-
-.search_bar input{
-    display: inline;
-    width: 500px;
-    height: 20px;
-    border: none;
-
-}
-.search_bar input:focus{
-          outline: none;
-}
-
-.search_bar button{
-    margin: 5px;
-    width: 50px;
-    height :25px ;
-    border: 1px solid;
-    padding: 0;
-   margin-top: 10px;
-    color: white;
-    text-align: center;
-    justify-content: center;
-    background-color: rgb(80, 74, 74);
-}
-.login a{
-    background-color: rgb(255, 255, 255);
-    border: 20px rgb(188, 14, 14);
-    color: black;
-    font-weight: 600;
-}
-.login{
-    border: 2px black solid; 
-    display: inline-block;
-}
-.signup{
-    display: inline-block;
-    border: 2px black solid;
-    background-color: black;
-}
-.signup a{
-    color: white;
-    font-weight :600 ;
-    background-color: rgb(9, 3, 3);
-
-}
+    .material-symbols-outlined {
+        display: flex;
+        justify-content: center;
+        align-content:center ;
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 48
+    }
+    .form1
+    {
+        display: inline;
+        justify-content: center;
+        align-content:center ;
+        width: 90%;
+        height: 10px;
+        padding: 10px;
+        position: relative;
+        top:-17px
+    }
+    .xx1{
+        position: relative;
+        top: 15px;
+        left:10px
+    }
+    .search_bar{
+        display: flex;
+        flex-grow: 2;
+        justify-content: center;
+        align-content:center ;
+        
+    } 
+    .icon2{
+        display: inline-block;
+        width: 10%; 
+        padding-left: 90%;
+        position: relative;
+        top: -7px;
+    }
+     .search_bar section
+    {
+        border : solid 1px black;
+        border-radius: 50px;
+        background-color: white;
+    }
+    
+    .search_bar input{
+        display: inline;
+        width: 75%;
+        height: 20px;
+        border: none;
+    
+    }
+    .search_bar input:focus{
+              outline: none;
+    }
+    .form3{
+        display: inline-block;
+    }
+    .xx2{
+        width: 50px;
+        height :25px ;
+        border: 1px solid;
+        color: white;
+        text-align: center;
+        background-color: rgb(80, 74, 74);
+    }
+    .login a{
+        background-color: rgb(255, 255, 255);
+        border: 20px rgb(188, 14, 14);
+        color: black;
+        font-weight: 600;
+    }
+    .login{
+        border: 2px black solid; 
+        display: inline-block;
+    }
+    .signup{
+        display: inline-block;
+        border: 2px black solid;
+        background-color: black;
+    }
+    .signup a{
+        color: white;
+        font-weight :600 ;
+        background-color: rgb(9, 3, 3);
+    
+    } 
+  }
