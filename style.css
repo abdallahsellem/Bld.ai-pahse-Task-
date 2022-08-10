@@ -1,29 +1,40 @@
 
 *{
+
     margin: 0;
+
     padding :0 ;
+
     box-sizing: border-box;
+
 }
 
 .nav_bar{
     width: 100%;
+
     display: flex ;
+
     height: 90px;
+
     justify-content: left;
+
     align-items: center;
+
     align-content: center;
+
     background-color:rgb(250, 248, 248) ;
 }
- .nav_bar .big-screen{
+ .nav_bar .BigScreen{
     display: none;
 
 }
-.Mod{
+.SchBar{
     display: none;
 
 }
-.Mod2{
+.BigHeader{
     margin-left: auto;
+
    list-style-type: none;
 }
 .icon1{
@@ -33,10 +44,10 @@
     display: inline;
 }
 
-.TT{
+.CartIcon{
     display: none;
 }
-.T{
+.EarthIcon{
     display: none;
 }
 
@@ -45,113 +56,180 @@
 
 
 
-.middle-page{
+.MiddleBage{
     width: 100%;
+
     height: 288px;
+
     background-color: rgb(235, 230, 230);
 }
-.section1-mid
+.Section1Mid
 {
     width: 100%;
+
     height: 437px;
+
     overflow: hidden;
 }
 .panar{
     width: 100%;
 }
-.image-txt1{
+.imageText1{
     position: absolute;
+
     width: 43%;
+
     height: 26%;
+
     max-height: 160px;
+
     left: 33%;
+
     top: 272px;
+
     background-color: rgb(238 238 238);
+
     display: inline-block;
+
     text-align: center;
 
 }
 
-.element-image2
+.Element_img2
 {
     text-align: center;
+
     justify-content: center;
+
     align-content: center;
+
     font-size: 2.3vw;
+
     overflow: hidden;
+
 }
 
-.element-image{
+.Element_img{
     text-align: center;
+
     justify-content: center;
+
     align-content: center;
+
     position: relative;
+
     top: 13%;
+
     font-size: 3vw;
+
     overflow: hidden;
+
 }
 
 
 .container1 {
-    background-color: rgb(246, 246, 246);
+
+    background-color: rgb(250, 250, 244);
+
     margin: 10px;
+
 }
 
 .container1 li{
+
     display: inline-block;
+
     margin:5px;
+
     list-style-type: none;
+
+    font-size: 20px;
+
 }
 
 .paragraph1
 {
     margin:10px ;
+
     font-size: 3vw;
+
 }
 main section h2{
+
     margin: 10px;
 }
 
 .container2{
    
     margin: 20px;
+
     width: 96%;
+
     height: 1583px;
+
     border: solid 1px;
+
     background-color: rgb(255 255 255);
+
 }
-.con2-button2{
-    width: 60px;
-    height :90%;
-    background-color: rgb(224, 224, 219);
+.container2 p{
+
+    margin-left: 20px;
+
+    font-size: 15px;
+
+}
+.Con2Button{
+
+    width: 105px;
+
+    height :75%;
+
+    background-color: rgb(246, 246, 238);
+
     margin-left: 4%;
+
     border :solid 1px ;
+
     display: flex;
+
     justify-content: center;
+
     align-content: center;
     
 }
-.con2-button2 a{
+.Con2Button a{
+
     display: flex;
+
     text-align: center; text-decoration: none; color: black ;
-    font-weight :bold 
 }
-.courses-b1{
+.CoursesB1{
+
     margin: 10px;
+
     overflow: hidden;
+
     width: 100%;
 
 }
-.con2-div img {
+.Con2Div img {
+
    width: 100%;
+
    height: 100%;
 } 
-.star-rating{
+.StarRating{
+
     display: inline-block;
+
     color: orange;
 
 }
+.StarRating a{
 
+    color: black;
+}
 
 /**************************************************************/
 
@@ -159,44 +237,68 @@ main section h2{
 
 
 @media screen and (min-width:550px) {
-    .nav_bar .big-screen{
+
+    .nav_bar .BigScreen{
+
         display: inline-block;
     
     }
     .nav_bar{
+
         width: 100%;
+
         display: flex ;
+
         height: 90px;
+
         justify-content: left;
+
         align-items: center;
+
         align-content: center;
+
         background-color:rgb(250, 248, 248) ;
+
     }
     .icon1{
+
         display: none;
        }
    .nav_bar > li  {    
-    list-style-type: none;
+
+        list-style-type: none;
+
         margin: 7px ;
      }
-     .TT{
+     .CartIcon{
+
         display: inline-block;
+
      }
-     .T{
+     .EarthIcon{
+
         display: inline-block;
+
      }
      
- .SmallscreenTag h1
-{
-  visibility: visible;
-  display: inline;
-  position: relative;
-  top: -2px;
-} 
+    .SmallscreenTag h1
+    {
+        visibility: visible;
+
+        display: inline;
+
+        position: relative;
+
+        top: -2px;
+
+    } 
     .material-symbols-outlined {
         display: flex;
+
         justify-content: center;
+
         align-content:center ;
+
       font-variation-settings:
       'FILL' 0,
       'wght' 400,
@@ -206,83 +308,133 @@ main section h2{
     .form1
     {
         display: inline;
+
         justify-content: center;
+
         align-content:center ;
+
         width: 90%;
+
         height: 10px;
+
         padding: 10px;
+
         position: relative;
+
         top:-17px
     }
-    .in-1{
+    .Input_1{
         position: relative;
-        top: 15px;
-        left:10px
+
+        top: 0px;
+
+        left: 20px;
+
     }
     .T1{
+
         background-color: rgb(247, 238, 221);
+
         border: solid 1px black;
     }
     .search_bar{
+
         display: flex;
+
         flex-grow: 2;
+
         justify-content: center;
+
         align-content:center ;
+
         
     } 
     .icon2{
+
         display: inline-block;
+
         width: 10%; 
+
         padding-left: 90%;
+
         position: relative;
+
         top: -7px;
     }
      .search_bar section
     {
         border : solid 1px black;
+
         border-radius: 50px;
+
         background-color: white;
+
     }
     
     .search_bar input{
+
         display: inline;
+
         width: 75%;
-        height: 20px;
+
+        height: 49px;
+
         border: none;
     
     }
     .search_bar input:focus{
+
               outline: none;
     }
     .form3{
+
         display: inline-block;
     }
-    .in-2{
+    .Input_2{
+
         width: 50px;
+
         height :25px ;
+
         border: 1px solid;
+
         color: white;
+
         text-align: center;
+
         background-color: rgb(80, 74, 74);
     }
     .login a{
+
         background-color: rgb(255, 255, 255);
+
         border: 20px rgb(188, 14, 14);
+
         color: black;
+
         font-weight: 600;
     }
     .login{
+
         border: 2px black solid; 
+
         display: inline-block;
     }
     .signup{
+
         display: inline-block;
+
         border: 2px black solid;
+
         background-color: black;
+
     }
     .signup a{
+
         color: white;
+
         font-weight :600 ;
+
         background-color: rgb(9, 3, 3);
     
     } 
@@ -290,113 +442,180 @@ main section h2{
     /*      Middle Page Big screen                                 */ 
 
 
-    .middle-page{
+    .MiddleBage{
+
         width: 100%;
+
         height: 500px;
+
         background-color: rgb(235, 230, 230);
     }
-    .section1-mid
+    .Section1Mid
     {
         width: 100%;
+
         height: 437px;
+
         overflow: hidden;
     }
     .panar{
         width: 100%;
     }
-    .image-txt1{
+    .imageText1{
+
         position: absolute;
+
         width: 31%;
+
         height: 31%;
+
         max-height: 160px;
+
         left: 14%;
+
         top: 142px;
+
         background-color: rgb(238 238 238);
+
         display: inline-block;
+
         text-align: center;
 
     }
-    .element-image2
+    .Element_img2
     {
         text-align: center;
+
         justify-content: center;
+
         align-content: center;
+
         font-size: 1.5vw;
+
         overflow: hidden;
+
     }
-    .element-image{
+    .Element_img{
+
         text-align: center;
+
         justify-content: center;
+
         align-content: center;
+
         position: relative;
+
         top: 13%;
+
         font-size: 3vw;
+
         overflow: hidden;
     }
     .container1 {
+
         background-color: rgb(246, 246, 246);
+
         display: flex;
+
     }
     .container1 li{
+
         margin: 25px;
+
         list-style-type: none;
     }
     .paragraph1
     {
         margin:10px ;
+
         font-size: 1.3vw;
     }
+
     main section h2{
+
         margin: 10px;
     }
     .container2{
        
         margin: 20px;
+
         width: 100%;
+
         height: 700px;
-        background-color: rgb(245 244 241);
-    border: solid 1px;
+
+        background-color: rgb(255, 254, 250);
+
+        border: solid 1px;
     }
     .container2 > div{
+
         margin: 10px;
+
         display:inline-block;
+
         width: 15%;
+
         height :30%;
+
         border: 1px solid black;
+
     }
-    .con2-button2{
-        width:60px;
-        height :90%;
-        background-color: rgb(230, 230, 223);
+    .Con2Button{
+
+        width:105px;
+
+        height :75%;
+
+        background-color: rgb(246, 246, 240);
+
         margin-left: 4%;
+
         border :solid 1px ;
+
         display: flex;
+
         justify-content: center;
+
         align-content: center;
         
     }
-    .con2-button2 a{
+    .Con2Button a{
+
         display: flex;
-        text-align: center; text-decoration: none; color: black ;
-        font-weight :bold 
+
+        text-align: center; text-decoration: none; color: black ; 
     }
-    .courses-b1{
+    .CoursesB1{
+        
         margin: 10px;
+
         overflow: hidden;
+
         width: 100%;
 
     }
-    .con2-div img {
+    .Con2Div img {
+
        width: 100%;
+
        height: 100%;
     }
-    .price-text2 span{
+    .PriceText2 span{
+
         margin: 5px;
+
         font-size:1.3vw
     }
-    .star-rating{
+    .StarRating{
+
         display: inline-block;
+
         color: orange;
 
     }
+    .StarRating a{
+
+        color: black;
+    }
+
   }
