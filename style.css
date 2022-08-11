@@ -1,237 +1,237 @@
 
-*{
+    *{
 
-    margin: 0;
+        margin: 0;
 
-    padding :0 ;
+        padding :0 ;
 
-    box-sizing: border-box;
+        box-sizing: border-box;
 
-}
+    }
 
-.nav_bar{
-    width: 100%;
+    .nav_bar{
+        width: 100%;
 
-    display: flex ;
+        display: flex ;
 
-    height: 90px;
+        height: 90px;
 
-    justify-content: left;
+        justify-content: left;
 
-    align-items: center;
+        align-items: center;
 
-    align-content: center;
+        align-content: center;
 
-    background-color:rgb(250, 248, 248) ;
-}
- .nav_bar .BigScreen{
-    display: none;
+        background-color:rgb(250, 248, 248) ;
+    }
+    .nav_bar .BigScreen{
+        display: none;
 
-}
-.SchBar{
-    display: none;
+    }
+    .SchBar{
+        display: none;
 
-}
-.BigHeader{
-    margin-left: auto;
+    }
+    .BigHeader{
+        margin-left: auto;
 
-   list-style-type: none;
-}
-.icon1{
-    list-style-type: none;
-}
-.icon1 span{
-    display: inline;
-}
+        list-style-type: none;
+    }
+    .icon1{
+        list-style-type: none;
+    }
+    .icon1 span{
+        display: inline;
+    }
 
-.CartIcon{
-    display: none;
-}
-.EarthIcon{
-    display: none;
-}
+    .CartIcon{
+        display: none;
+    }
+    .EarthIcon{
+        display: none;
+    }
 
 
-/*      Middle Page Small screen                                 */ 
+    /*      Middle Page Small screen                                 */ 
 
 
 
-.MiddleBage{
-    width: 100%;
+    .MiddleBage{
+        width: 100%;
 
-    height: 288px;
+        height: 288px;
 
-    background-color: rgb(235, 230, 230);
-}
-.Section1Mid
-{
-    width: 100%;
+        background-color: rgb(249 249 249);
+    }
+    .Section1Mid
+    {
+        width: 100%;
 
-    height: 437px;
+        height: 437px;
 
-    overflow: hidden;
-}
-.panar{
-    width: 100%;
-}
-.imageText1{
-    position: absolute;
+        overflow: hidden;
+    }
+    .panar{
+        width: 100%;
+    }
+    .imageText1{
+        position: absolute;
 
-    width: 43%;
+        width: 43%;
 
-    height: 26%;
+        height: 11%;
 
-    max-height: 160px;
+        max-height: 160px;
 
-    left: 33%;
+        left: 33%;
 
-    top: 272px;
+        top: 272px;
 
-    background-color: rgb(238 238 238);
+        background-color: rgb(238 238 238);
 
-    display: inline-block;
+        display: inline-block;
 
-    text-align: center;
+        text-align: center;
 
-}
+    }
 
-.Element_img2
-{
-    text-align: center;
+    .Element_img2
+    {
+        text-align: center;
 
-    justify-content: center;
+        justify-content: center;
 
-    align-content: center;
+        align-content: center;
 
-    font-size: 2.3vw;
+        font-size: 2.3vw;
 
-    overflow: hidden;
+        overflow: hidden;
 
-}
+    }
 
-.Element_img{
-    text-align: center;
+    .Element_img{
+        text-align: center;
 
-    justify-content: center;
+        justify-content: center;
 
-    align-content: center;
+        align-content: center;
 
-    position: relative;
+        position: relative;
 
-    top: 13%;
+        top: 13%;
 
-    font-size: 3vw;
+        font-size: 3vw;
 
-    overflow: hidden;
+        overflow: hidden;
 
-}
+    }
 
 
-.container1 {
+    .container1 {
 
-    background-color: rgb(250, 250, 244);
+        background-color: rgb(250, 250, 244);
 
-    margin: 10px;
+        margin: 10px;
 
-}
+    }
 
-.container1 li{
+    .container1 li{
 
-    display: inline-block;
+        display: inline-block;
 
-    margin:5px;
+        margin:5px;
 
-    list-style-type: none;
+        list-style-type: none;
 
-    font-size: 20px;
+        font-size: 20px;
 
-}
+    }
 
-.paragraph1
-{
-    margin:10px ;
+    .paragraph1
+    {
+        margin:10px ;
 
-    font-size: 3vw;
+        font-size: 3vw;
 
-}
-main section h2{
+    }
+    main section h2{
 
-    margin: 10px;
-}
+        margin: 10px;
+    }
 
-.container2{
-   
-    margin: 20px;
-
-    width: 96%;
-
-    height: 1583px;
-
-    border: solid 1px;
-
-    background-color: rgb(255 255 255);
-
-}
-.container2 p{
-
-    margin-left: 20px;
-
-    font-size: 15px;
-
-}
-.Con2Button{
-
-    width: 105px;
-
-    height :75%;
-
-    background-color: rgb(246, 246, 238);
-
-    margin-left: 4%;
-
-    border :solid 1px ;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-content: center;
+    .container2{
     
-}
-.Con2Button a{
+        margin: 0px;
 
-    display: flex;
+        width: 80%;
 
-    text-align: center; text-decoration: none; color: black ;
-}
-.CoursesB1{
+        height: 1583px;
 
-    margin: 10px;
+        border: solid 1px;
 
-    overflow: hidden;
+        background-color: rgb(255 255 255);
 
-    width: 100%;
+    }
+    .container2 p{
 
-}
-.Con2Div img {
+        margin-left: 20px;
 
-   width: 100%;
+        font-size: 18px;
 
-   height: 100%;
-} 
-.StarRating{
+    }
+    .Con2Button{
 
-    display: inline-block;
+        width: 115px;
 
-    color: orange;
+        height :81%;
 
-}
-.StarRating a{
+        background-color: rgb(246, 246, 238);
 
-    color: black;
-}
+        margin-left: 4%;
 
-/**************************************************************/
+        border :solid 1px ;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-content: center;
+        
+    }
+    .Con2Button a{
+
+        display: flex;
+
+        text-align: center; text-decoration: none; color: black ;
+    }
+    .CoursesB1{
+
+        margin: 10px;
+
+        overflow: hidden;
+
+        width: 100%;
+
+    }
+    .Con2Div img {
+
+        width: 100%;
+
+        height: 100%;
+    } 
+    .StarRating{
+
+        display: inline-block;
+
+        color: orange;
+
+    }
+    .StarRating a{
+
+        color: black;
+    }
+
+    /**************************************************************/
 
 
 
@@ -268,7 +268,7 @@ main section h2{
 
         list-style-type: none;
 
-        margin: 7px ;
+        margin: 10px ;
      }
      .CartIcon{
 
@@ -299,11 +299,11 @@ main section h2{
 
         align-content:center ;
 
-      font-variation-settings:
-      'FILL' 0,
-      'wght' 400,
-      'GRAD' 0,
-      'opsz' 48
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
     }
     .form1
     {
@@ -313,7 +313,7 @@ main section h2{
 
         align-content:center ;
 
-        width: 90%;
+        width: 100%;
 
         height: 10px;
 
@@ -331,9 +331,9 @@ main section h2{
         left: 20px;
 
     }
-    .T1{
+    .EarthIcon_Div{
 
-        background-color: rgb(247, 238, 221);
+        background-color: rgb(250, 247, 241);
 
         border: solid 1px black;
     }
@@ -359,16 +359,19 @@ main section h2{
 
         position: relative;
 
-        top: -7px;
+        top: -3px;
     }
      .search_bar section
     {
-        border : solid 1px black;
+        border: solid 1px black;
 
         border-radius: 50px;
 
+        display: inline-block;
+
         background-color: white;
 
+        width: 60%;
     }
     
     .search_bar input{
@@ -392,9 +395,13 @@ main section h2{
     }
     .Input_2{
 
+        margin: 10px;
+
         width: 50px;
 
-        height :25px ;
+        display: inline-block;
+
+        height: 25px;
 
         border: 1px solid;
 
@@ -403,6 +410,7 @@ main section h2{
         text-align: center;
 
         background-color: rgb(80, 74, 74);
+
     }
     .login a{
 
@@ -448,8 +456,10 @@ main section h2{
 
         height: 500px;
 
-        background-color: rgb(235, 230, 230);
+        background-color: rgb(255, 255, 255);
     }
+
+
     .Section1Mid
     {
         width: 100%;
@@ -458,18 +468,22 @@ main section h2{
 
         overflow: hidden;
     }
+
+
     .panar{
         width: 100%;
     }
+
+
     .imageText1{
 
         position: absolute;
 
         width: 31%;
 
-        height: 31%;
+        height: 44%;
 
-        max-height: 160px;
+        max-height: 170px;
 
         left: 14%;
 
@@ -482,6 +496,8 @@ main section h2{
         text-align: center;
 
     }
+
+
     .Element_img2
     {
         text-align: center;
@@ -511,19 +527,27 @@ main section h2{
 
         overflow: hidden;
     }
+
+
     .container1 {
 
-        background-color: rgb(246, 246, 246);
+        background-color: rgb(255, 252, 252);
 
         display: flex;
 
     }
+
+
     .container1 li{
 
-        margin: 25px;
+        margin: 22px;
 
+        color:rgb(147, 149, 150) ;
+        
         list-style-type: none;
     }
+
+
     .paragraph1
     {
         margin:10px ;
@@ -535,22 +559,29 @@ main section h2{
 
         margin: 10px;
     }
+
+
     .container2{
        
-        margin: 20px;
 
-        width: 100%;
+        width: 90%;
 
-        height: 700px;
+        height: 580px;
+
+        margin-left:50px ;
 
         background-color: rgb(255, 254, 250);
 
-        border: solid 1px;
+        border: solid 1px #d1d7dc;
     }
+   
+
     .container2 > div{
 
         margin: 10px;
 
+        margin-left: 40px;
+        
         display:inline-block;
 
         width: 15%;
@@ -560,30 +591,40 @@ main section h2{
         border: 1px solid black;
 
     }
+
     .Con2Button{
 
-        width:105px;
+        width: 120px;
 
-        height :75%;
+        height: 89%;
 
-        background-color: rgb(246, 246, 240);
+        background-color: rgb(255 255 255);
 
-        margin-left: 4%;
+        margin-left: 3%;
 
-        border :solid 1px ;
+        border: solid 1px;
 
         display: flex;
 
         justify-content: center;
 
         align-content: center;
-        
+
     }
+
+
     .Con2Button a{
 
         display: flex;
 
-        text-align: center; text-decoration: none; color: black ; 
+        text-align: center ;
+
+        text-decoration: none;
+
+        color: black;
+
+        font-weight: 600;
+
     }
     .CoursesB1{
         
