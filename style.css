@@ -374,7 +374,7 @@
         width: 60%;
     }
     
-    .search_bar input{
+    .search_bar section input{
 
         display: inline;
 
@@ -384,7 +384,8 @@
 
         border: none;
     
-    }
+    } 
+
     .search_bar input:focus{
 
               outline: none;
@@ -541,9 +542,7 @@
     .container1 li{
 
         margin: 22px;
-
         color:rgb(147, 149, 150) ;
-        
         list-style-type: none;
     }
 
@@ -567,7 +566,7 @@
         width: 90%;
 
         height: 580px;
-
+        
         margin-left:50px ;
 
         background-color: rgb(255, 254, 250);
@@ -576,24 +575,20 @@
     }
    
 
-    .container2 > div{
-
-        margin: 10px;
+   .Con2Div{
+         margin: 10px;
 
         margin-left: 40px;
-        
+
         display:inline-block;
 
-        width: 15%;
+        width: 19%;
 
         height :30%;
 
-        border: 1px solid black;
-
-    }
+   }
 
     .Con2Button{
-
         width: 120px;
 
         height: 89%;
@@ -610,6 +605,7 @@
 
         align-content: center;
 
+        
     }
 
 
