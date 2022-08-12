@@ -1,7 +1,11 @@
+let GlobalInput = "   ";
 function search_animal() {
   let input = document.getElementById("inpooo").value;
   input = input.toLowerCase();
-
+  if (GlobalInput === input) {
+    return;
+  }
+  GlobalInput = input;
   const renderDetails = async () => {
     // console.log("ahemd") ;
     const res = await fetch("http://localhost:3000/courses");
@@ -47,7 +51,9 @@ function search_animal() {
         DivOfPrice = document.createElement("div");
         DivOfPircechild = document.createElement("div");
         DivOfPircechild.className = "PriceText2";
-        DivOfPircechild.textContent = Listi[i]["price"];
+        SpanOfPrice = document.createElement("span");
+        SpanOfPrice.textContent = Listi[i]["price"];
+        DivOfPircechild.appendChild(SpanOfPrice);
         DivOfPrice.appendChild(DivOfPircechild);
         DivOfCourse.appendChild(DivOfPrice);
 
