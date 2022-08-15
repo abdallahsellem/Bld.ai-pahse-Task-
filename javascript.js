@@ -1,34 +1,47 @@
 let GlobalInput = "   ";
 let target = "courses_python";
 let IsEvent = false;
-function search_animal() {
-  let input = document.getElementById("inpooo").value;
+function search_On_Grid() {
+  let input = document.getElementById("Input_ID").value;
   input = input.toLowerCase();
 
   if (GlobalInput === input && IsEvent === false) {
     return;
   }
-  console.log(IsEvent);
   IsEvent = false;
   GlobalInput = input;
   const renderDetails = async () => {
-    console.log(target);
     const res = await fetch("http://localhost:3000/" + target);
     const post = await res.json();
     Listi = post;
     templete = "";
-    let Big_div = document.querySelectorAll(".CardWarp");
-    let Curr_Div = Big_div[0];
-    Big_div[0].innerHTML = "";
-    Big_div[1].innerHTML = "";
+    Temporary_Div = document.querySelector(".carousel-inner");
+    Temporary_Div.innerHTML = "";
+    childDiv1 = document.createElement("div");
+    childDiv1.className = "carousel-item active";
+    childDiv2 = document.createElement("div");
+    childDiv2.className = "CardWarp";
+    childDiv1.appendChild(childDiv2);
+    Temporary_Div.appendChild(childDiv1);
+    let Curr_Div = childDiv2;
+    Curr_Div.innerHTML = "";
+    let created = false;
     let NumberOfCards = 0;
     for (i = 0; i < Listi.length; i++) {
-      if (NumberOfCards >= 3) {
-        Curr_Div = Big_div[1];
-      }
       a = Listi[i]["title"];
       if (a.toLowerCase().indexOf(input) > -1) {
         NumberOfCards++;
+        if (NumberOfCards > 3 && created === false) {
+          Temporary_Div = document.querySelector(".carousel-inner");
+          childDiv1 = document.createElement("div");
+          childDiv1.className = "carousel-item";
+          childDiv2 = document.createElement("div");
+          childDiv2.className = "CardWarp";
+          childDiv1.appendChild(childDiv2);
+          Temporary_Div.appendChild(childDiv1);
+          created = true;
+          Curr_Div = childDiv2;
+        }
         Card = document.createElement("div");
         Card.className = "card";
         Imgi = document.createElement("img");
@@ -69,9 +82,10 @@ function search_animal() {
   };
   renderDetails();
 }
-setInterval(search_animal, 1000);
+setInterval(search_On_Grid, 1000);
 document.querySelector(".python").addEventListener("click", () => {
   target = "courses_python";
+  IsEvent = true;
 });
 document.querySelector(".Web").addEventListener("click", () => {
   target = "courses_Web";
@@ -84,5 +98,8 @@ document.querySelector(".Java").addEventListener("click", () => {
 document.querySelector(".excel").addEventListener("click", () => {
   target = "courses_excel";
   IsEvent = true;
-  //console.log(target);
+});
+document.querySelector(".DataSc").addEventListener("click", () => {
+  target = "courses_Data";
+  IsEvent = true;
 });
