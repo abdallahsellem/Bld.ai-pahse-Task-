@@ -156,9 +156,14 @@
         list-style-type: none;
 
         font-size: 20px;
-
     }
-
+    .container1 li a{
+        text-decoration: none;
+        color: rgb(147, 144, 144);
+    }
+    .container1 a:hover{
+         color: black !important;
+    }
     .paragraph1
     {
         margin:10px ;
@@ -262,10 +267,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 90%;
     }
   
     .card{
          margin-left: .7em;
+         height: 90% !important;
          width: calc(100%/3);
      }
      .slide
@@ -274,6 +281,17 @@
         height: 300px;
         margin-left: 0;
      }
+ 
+    .ms-8rem
+    {
+          margin-left: 8rem;
+    }
+    .card-body{
+        height: 60%;
+    }
+    .card-body h5{
+        overflow: hidden;
+    }
 
     /**************************************************************/
 
@@ -605,7 +623,7 @@
 
         width: 90%;
 
-        height: 50%;
+       height: 700px;
         
         margin-left:50px ;
 
