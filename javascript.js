@@ -1,15 +1,27 @@
 let GlobalInput = "   ";
 let target = "courses_python";
 let IsEvent = false;
+let WidthChanged = false;
 function search_On_Grid() {
   let input = document.getElementById("Input_ID").value;
+  Body = document.querySelector("body");
+  WidthOfBody = Body.offsetWidth;
   input = input.toLowerCase();
 
-  if (GlobalInput === input && IsEvent === false) {
+  if (
+    GlobalInput === input &&
+    IsEvent === false &&
+    WidthChanged === WidthOfBody >= 500
+  ) {
     return;
   }
   IsEvent = false;
   GlobalInput = input;
+  if (WidthOfBody >= 500) {
+    WidthChanged = true;
+  } else {
+    WidthChanged = false;
+  }
   const renderDetails = async () => {
     const res = await fetch("http://localhost:3000/" + target);
     const post = await res.json();
@@ -27,11 +39,17 @@ function search_On_Grid() {
     Curr_Div.innerHTML = "";
     let created = false;
     let NumberOfCards = 0;
+    let NumberOfBages = 3;
+    if (WidthOfBody >= 500) {
+      NumberOfBages = 3;
+    } else {
+      NumberOfBages = 1;
+    }
     for (i = 0; i < Listi.length; i++) {
       a = Listi[i]["title"];
       if (a.toLowerCase().indexOf(input) > -1) {
         NumberOfCards++;
-        if (NumberOfCards > 3 && created === false) {
+        if (NumberOfCards > NumberOfBages) {
           Temporary_Div = document.querySelector(".carousel-inner");
           childDiv1 = document.createElement("div");
           childDiv1.className = "carousel-item";
@@ -41,6 +59,7 @@ function search_On_Grid() {
           Temporary_Div.appendChild(childDiv1);
           created = true;
           Curr_Div = childDiv2;
+          NumberOfCards -= NumberOfBages;
         }
         Card = document.createElement("div");
         Card.className = "card";
@@ -50,7 +69,7 @@ function search_On_Grid() {
         Imgi.alt = "...";
         Card.appendChild(Imgi);
         BodyOfCard = document.createElement("div");
-        BodyOfCard.className = "card-body";
+        BodyOfCard.className = "CardBody";
         CardTitle = document.createElement("h5");
         CardTitle.textContent = a;
         CardPrice = document.createElement("h6");
