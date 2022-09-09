@@ -1,5 +1,5 @@
 let GlobalInput = "   ";
-function search_animal() {
+function search_grid() {
   let input = document.getElementById("inpooo").value;
   input = input.toLowerCase();
   if (GlobalInput === input) {
@@ -64,4 +64,4 @@ function search_animal() {
   };
   renderDetails();
 }
-setInterval(search_animal, 1000);
+setInterval(search_grid, 1000);
